@@ -1,0 +1,65 @@
+/*
+
+Website
+
+- horizontal scroll bar
+- scroll animation
+- pulsating dot with changing text ("studying at Syracuse U. 📚, working on a project ⌨️, job hunting 👨🏾‍💻") under nav, inspired by nitro template
+
+
+colors: dark, light, purple (#8B5CF6)
+
+website structure ->
+
+nav+hero
+about (about paragraph & mini resume like on)
+project cards (3 projects of I am working on each month)
+contact 
+
+
+* Navbar: *
+
+
+
+telly sow (logo / home button)
+
+theme toggle (middle)
+
+projects, about, contact, download resume (links)
+
+* Hero: *
+
+heading: hi 👋🏽, i'm telly. welcome to my page (inspired by nitro hero) <- left
+
+image: headshot
+
+
+About:
+
+My name is Boubacar Sow, but I go by Telly. <br>
+I am an undergraduate at Syracuse University studying Information Management and Technology at the School of Information Studies.
+My passion lies in using my technical expertise to solve real world issues.
+Here is what I have done.(link to resume page)
+Here is what I am currently working on.(link)
+Here are my skills:
+*interactive icons here, 3x3 grid with gray icons that animate to their colors*
+
+Projects:
+ project cards that pop up (framer motion)
+    - yumeworks
+    - backends apparel
+    - 
+
+Contact:
+Resume:
+
+
+
+
+
+
+
+
+
+
+*/ 
