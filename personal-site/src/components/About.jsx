@@ -9,6 +9,7 @@ import { IoIosGitBranch } from "react-icons/io";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaNode } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
+import Button from './Button';
 
 
 export default function About() {
@@ -36,7 +37,7 @@ export default function About() {
   const skills = [
     { icon: <FaReact className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'React', isIcon: true },
     { icon: <IoLogoJavascript className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'JavaScript', isIcon: true },
-    { icon: <FaPython className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'JavaScript', isIcon: true },
+    { icon: <FaPython className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'Python', isIcon: true },
     { icon: <RiTailwindCssFill className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'Tailwind', isIcon: true },
     { icon: <TbFileTypeSql className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'SQL', isIcon: true },
     { icon: <IoIosGitBranch className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'Git', isIcon: true },
@@ -75,22 +76,16 @@ export default function About() {
             from building web apps to creating tools that actually help people.
           </p>
 
-          <div className="flex gap-3 mb-8">
-            <a
+          <motion.div className="flex gap-3 mb-8">
+              <a
               href="/resume.pdf"
-              target="_blank"
-              rel="noreferrer"
+              download="TellySow_Resume.pdf"
               className="text-xs text-primary border border-primary/20 px-4 py-2 rounded-md hover:bg-primary/10 transition-colors duration-200"
             >
-              here's what I've done →
+              ↓ check out my resume
             </a>
-            <a
-              href="#projects"
-              className="text-xs text-primary border border-primary/20 px-4 py-2 rounded-md hover:bg-primary/10 transition-colors duration-200"
-            >
-              what I'm building →
-            </a>
-          </div>
+          </motion.div>
+            
         </motion.div>
 
         {/* Right — experience */}
