@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react"
 import img from '../assets/app.png'
+import backends from '../assets/whitebackends_oglogo.png'
 
 const projects = [
   {
@@ -8,22 +9,24 @@ const projects = [
     year: '2025 — ongoing',
     category: 'Web Development',
     title: 'yumeworks',
-    description: 'Creative web agency offering design & development services for brands and startups. Built the full site, brand identity, and client pipeline from scratch.',
-    tags: ['React', 'Tailwind', 'Vite'],
-    link: 'https://yumeworks.co',
+    description: 'Creative web agency offering design & development services for brands and startups. Building full sites from scratch.',
+    tags: ['Coming Soon'],
+    link: '#',
     bg: 'from-[#1a1a2e] to-[#16213e]',
     image: img,
+    imgClass: 'w-1/2 h-1/2 object-cover'
   },
   {
     id: 2,
     year: '2025',
     category: 'Branding & E-Commerce',
     title: 'backends apparel',
-    description: 'Developer-culture clothing brand built for the builder community. Designed the brand identity and storefront end to end.',
-    tags: ['Branding', 'E-Commerce', 'UI/UX'],
-    link: '#',
+    description: 'Streetwear clothing brand built for the streetwear community. Designed the online brand identity, site, and a working storefront end to end.',
+    tags: ['React', 'Tailwind', 'Vite', 'Full-Stack'],
+    link: 'https://www.backendsapparel.store',
     bg: 'from-[#1a1212] to-[#2d1515]',
-    image: null
+    image: backends,
+    imgClass: 'w-full h-full object-contain p-8'
   },
   {
     id: 3,
@@ -31,10 +34,11 @@ const projects = [
     category: 'Coming Soon',
     title: 'next project',
     description: 'Something new in the works. Check back soon.',
-    tags: ['TBD'],
+    tags: ['Coming Soon'],
     link: '#',
     bg: 'from-[#0f1a1a] to-[#0d2020]',
-    image: null
+    image: null,
+    imgClass: ''
   },
 ]
 
@@ -88,7 +92,7 @@ export default function Projects() {
           <div className={`bg-linear-to-br ${project.bg} min-h-55 flex items-center justify-center relative overflow-hidden`}>
             <div className="absolute inset-0 bg-black/20" />
             {project.image
-              ? <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+              ? <img src={project.image} alt={project.title} className={project.imgClass} />
               : <span className="text-white/10 font-syne font-extrabold text-6xl select-none relative z-10 group-hover:text-white/20 transition-colors duration-500">
                   {project.title.slice(0, 2).toUpperCase()}
                 </span>

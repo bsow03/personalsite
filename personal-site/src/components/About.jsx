@@ -1,5 +1,15 @@
 // eslint-disable-next-line no-unused-vars
 import {motion} from 'framer-motion'
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaPython } from "react-icons/fa"
+import { RiTailwindCssFill } from "react-icons/ri";
+import { TbFileTypeSql } from "react-icons/tb";
+import { IoIosGitBranch } from "react-icons/io";
+import { BiLogoTypescript } from "react-icons/bi";
+import { FaNode } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
+
 
 export default function About() {
   const experience = [
@@ -24,15 +34,15 @@ export default function About() {
   ]
 
   const skills = [
-    { icon: '⚛️', name: 'React' },
-    { icon: '🟨', name: 'JavaScript' },
-    { icon: '🐍', name: 'Python' },
-    { icon: '🎨', name: 'Tailwind' },
-    { icon: '🗄️', name: 'SQL' },
-    { icon: '🐙', name: 'Git' },
-    { icon: '🔷', name: 'TypeScript' },
-    { icon: '🌐', name: 'Node.js' },
-    { icon: '🎭', name: 'Figma' },
+    { icon: <FaReact className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'React', isIcon: true },
+    { icon: <IoLogoJavascript className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'JavaScript', isIcon: true },
+    { icon: <FaPython className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'JavaScript', isIcon: true },
+    { icon: <RiTailwindCssFill className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'Tailwind', isIcon: true },
+    { icon: <TbFileTypeSql className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'SQL', isIcon: true },
+    { icon: <IoIosGitBranch className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'Git', isIcon: true },
+    { icon: <BiLogoTypescript className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'TypeScript', isIcon: true },
+    { icon: <FaNode className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'Node.js', isIcon: true },
+    { icon: <FaFigma className="text-white/20 group-hover:text-primary transition-colors duration-300" />, name: 'Figma', isIcon: true },
   ]
 
   return (
@@ -111,18 +121,18 @@ export default function About() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className="flex flex-col justify-center items-center py-4 my-2">
+        className="flex flex-col justify-center items-center py-4 my-4">
                 <p className="text-xs text-white/25 tracking-widest uppercase mb-4">Skills</p>
                 <div className="grid grid-cols-3 gap-3 w-full">
-                    {skills.map(({ icon, name }) => (
+                    {skills.map(({ icon, name, isIcon }) => (
                     <div
                         key={name}
-                        className="group size-full bg-[#111113] border border-white/6 rounded-lg py-4 px-2 flex flex-col items-center gap-2 cursor-pointer hover:border-primary/30 hover:bg-[#161618] transition-all duration-200"
+                        className="group w-full h-32 bg-[#111113] border border-white/6 rounded-lg py-6 px-4 flex flex-col items-center gap-2 cursor-pointer hover:border-primary/30 hover:bg-[#161618] transition-all duration-200"
                     >
-                        <span className="text-xl grayscale group-hover:grayscale-0 transition-all duration-300">
+                        <span className={`text-6xl transition-all duration-300 ${!isIcon ? 'grayscale group-hover:grayscale-0' : ''}`}>
                         {icon}
                         </span>
-                        <span className="text-[10px] text-white/25 font-light group-hover:text-white/60 transition-colors duration-200">
+                        <span className="text-xs text-white/25 font-light group-hover:text-white/60 transition-colors duration-200">
                         {name}
                         </span>
                     </div>

@@ -20,10 +20,13 @@ export default function Navbar() {
             </span>
         </a>
 
+        {/* 
         <button className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-3 py-1.5 text-xs text-white/40 hover:text-white/70 transition-colors">
           <span>☀</span>
           <span>light</span>
         </button>
+        */}
+
 
         <div className="flex items-center gap-1">
           {navLinks.map(({ label, href }) => (

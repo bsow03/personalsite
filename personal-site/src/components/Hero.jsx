@@ -21,7 +21,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-white/40 text-sm font-light mb-10 leading-relaxed">
-          i build things for the web.
+          i build things 👨🏾‍💻.
           <br />
           currently based in syracuse, ny.
         </p>
