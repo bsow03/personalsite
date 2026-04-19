@@ -2,8 +2,6 @@
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 
-
-
 export default function Contact() {
   return (
     <section id="contact" className="bg-[#0c0c0e] border-t border-white/4">
