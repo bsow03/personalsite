@@ -5,14 +5,14 @@ import { TypeAnimation } from 'react-type-animation'
 export default function Contact() {
   return (
     <section id="contact" className="bg-[#0c0c0e] border-t border-white/4">
-      <div className="max-w-6xl mx-auto px-16 py-28">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-16 sm:py-20 md:py-28">
 
         <motion.span
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-primary text-xs tracking-[0.12em] lowercase mb-8 block"
+          className="text-primary text-xs tracking-[0.12em] lowercase mb-4 sm:mb-8 block"
         >
           .say hello
         </motion.span>
@@ -22,8 +22,8 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="font-syne font-extrabold text-white leading-[1.05] tracking-tight mb-16"
-          style={{ fontSize: 'clamp(36px, 6vw, 72px)' }}
+          className="font-syne font-extrabold text-white leading-[1.05] tracking-tight mb-12 sm:mb-16"
+          style={{ fontSize: 'clamp(28px, 6vw, 72px)' }}
         >
           <TypeAnimation
             sequence={[
@@ -43,23 +43,23 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex items-center gap-4"
+          className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-4"
         >
           <a
             href="mailto:bsow03@syr.edu"
-            className="group flex items-center gap-3 border border-white/12 text-white/60 text-sm font-light px-8 py-4 rounded-lg hover:border-white/30 hover:text-white transition-all duration-300"
+            className="group flex items-center justify-center sm:justify-start gap-3 border border-white/12 text-white/60 text-xs sm:text-sm font-light px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:border-white/30 hover:text-white transition-all duration-300 w-full sm:w-auto"
           >
             contact me
             <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200">↗</span>
           </a>
 
-          <div className="flex items-center gap-3 ml-4">
+          <div className="flex items-center gap-3 sm:ml-4 justify-center sm:justify-start">
             
             <a
               href="https://linkedin.com/in/bsow03"
               target="_blank"
               rel="noreferrer"
-              className="text-white/20 hover:text-white/60 transition-colors duration-200 p-2"
+              className="text-white/20 hover:text-white/60 transition-colors duration-200 p-1.5 sm:p-2"
               aria-label="LinkedIn"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -71,7 +71,7 @@ export default function Contact() {
               href="https://github.com/bsow03"
               target="_blank"
               rel="noreferrer"
-              className="text-white/20 hover:text-white/60 transition-colors duration-200 p-2"
+              className="text-white/20 hover:text-white/60 transition-colors duration-200 p-1.5 sm:p-2"
               aria-label="GitHub"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -81,7 +81,7 @@ export default function Contact() {
             
             <a
               href="mailto:bsow03@syr.edu"
-              className="text-white/20 hover:text-white/60 transition-colors duration-200 p-2"
+              className="text-white/20 hover:text-white/60 transition-colors duration-200 p-1.5 sm:p-2"
               aria-label="Email"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
