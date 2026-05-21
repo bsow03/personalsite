@@ -10,7 +10,6 @@ import Backends from './components/casestudy/Backends'
 function Home() {
   return (
     <>
-      <Navbar />
       <Hero />
       <About />
       <Projects />
