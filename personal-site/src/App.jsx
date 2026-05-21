@@ -22,9 +22,12 @@ function Home() {
 
 export default function App() {
   return (
+    <>
+    <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/projects/backends" element={<Backends />} />
     </Routes>
+    </>
   )
 }
