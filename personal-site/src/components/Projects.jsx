@@ -1,32 +1,36 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react"
+import { useNavigate } from "react-router-dom"
 import img from '../assets/app.png'
 import backends from '../assets/whitebackends_oglogo.png'
 
 const projects = [
+  
   {
     id: 1,
+    year: '2025',
+    category: 'Branding & E-Commerce',
+    title: 'backends apparel',
+    description: 'Streetwear clothing brand built for the streetwear community. Designed the online brand identity, site, and a working storefront end to end.',
+    tags: ['React', 'Tailwind', 'Vite', 'Full-Stack'],
+    link: '/projects/backends',
+    external: false,
+    bg: 'from-[#1a1212] to-[#2d1515]',
+    image: backends,
+    imgClass: 'w-full h-full object-contain p-8'
+  },
+  {
+    id: 2,
     year: '2025 — ongoing',
     category: 'Web Development',
     title: 'yumeworks',
     description: 'Creative web agency offering design & development services for brands and startups. Building full sites from scratch.',
     tags: ['Coming Soon'],
     link: '#',
+    external: false,
     bg: 'from-[#1a1a2e] to-[#16213e]',
     image: img,
     imgClass: 'w-1/2 h-1/2 object-cover'
-  },
-  {
-    id: 2,
-    year: '2025',
-    category: 'Branding & E-Commerce',
-    title: 'backends apparel',
-    description: 'Streetwear clothing brand built for the streetwear community. Designed the online brand identity, site, and a working storefront end to end.',
-    tags: ['React', 'Tailwind', 'Vite', 'Full-Stack'],
-    link: 'https://www.backendsapparel.store',
-    bg: 'from-[#1a1212] to-[#2d1515]',
-    image: backends,
-    imgClass: 'w-full h-full object-contain p-8'
   },
   {
     id: 3,
@@ -36,6 +40,7 @@ const projects = [
     description: 'Something new in the works. Check back soon.',
     tags: ['Coming Soon'],
     link: '#',
+    external: false,
     bg: 'from-[#0f1a1a] to-[#0d2020]',
     image: null,
     imgClass: ''
@@ -48,6 +53,8 @@ const cardVariants = {
 }
 
 export default function Projects() {
+  const navigate = useNavigate()
+
   return (
     <motion.section id="projects" className="bg-(--bg-dark) px-4 sm:px-6 md:px-8 lg:px-16 py-12 sm:py-16 md:py-20 w-full">
 
@@ -78,6 +85,12 @@ export default function Projects() {
             href={project.link}
             target={project.link !== '#' ? '_blank' : undefined}
             rel="noreferrer"
+            onClick={(e) => {
+              if (!project.external && project.link !== '#'){
+                e.preventDefault()
+                navigate(project.link)
+              }
+            }}
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
