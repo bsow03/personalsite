@@ -31,7 +31,7 @@ export default function Backends() {
 
         {/* ───────────── HERO ───────────── */}
         <section className="mb-32">
-          <p className="text-violet-400 text-sm font-mono mb-6">.case study</p>
+          <p className="text-primary text-sm font-mono mb-6">.case study</p>
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-none">
             backends apparel
           </h1>
@@ -58,7 +58,7 @@ export default function Backends() {
                 href="https://backendsapparel.store"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm inline-flex items-center gap-1 hover:text-violet-400 transition"
+                className="text-sm inline-flex items-center gap-1 hover:text-primary transition"
               >
                 visit site <ArrowUpRight size={12} />
               </a>
@@ -68,7 +68,7 @@ export default function Backends() {
 
         {/* ───────────── PROBLEM ───────────── */}
         <section className="mb-32">
-          <p className="text-violet-400 text-sm font-mono mb-6">.the problem</p>
+          <p className="text-primary text-sm font-mono mb-6">.the problem</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-8 max-w-3xl leading-tight">
             A developer-culture brand without a developer-culture experience.
           </h2>
@@ -81,13 +81,13 @@ export default function Backends() {
 
         {/* ───────────── BEFORE ───────────── */}
         <section className="mb-32">
-          <p className="text-violet-400 text-sm font-mono mb-6">.before</p>
+          <p className="text-primary text-sm font-mono mb-6">.before</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-10">where we started.</h2>
 
-          {/* SWAP THIS DIV FOR:
-              <img src="/case-studies/backends/before.png" alt="Original Backends site" className="w-full rounded-2xl border border-white/10" />
-          */}
           <div className="border border-white/10 rounded-2xl overflow-hidden bg-white/5 mb-8 aspect-video flex items-center justify-center">
+            {/* SWAP THIS DIV FOR:
+                <img src="/case-studies/backends/before.png" alt="Original Backends site" className="w-full rounded-2xl border border-white/10" />
+            */}
             <div className="text-center">
               <p className="text-white/50 font-mono text-sm">before.png</p>
               <p className="text-white/30 text-xs mt-2">screenshot of the original site goes here</p>
@@ -102,7 +102,7 @@ export default function Backends() {
 
         {/* ───────────── PROCESS ───────────── */}
         <section className="mb-32">
-          <p className="text-violet-400 text-sm font-mono mb-6">.process</p>
+          <p className="text-primary text-sm font-mono mb-6">.process</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-8 max-w-3xl leading-tight">
             Designed in Figma. Refined in code.
           </h2>
@@ -122,7 +122,7 @@ export default function Backends() {
 
         {/* ───────────── DESIGN SYSTEM ───────────── */}
         <section className="mb-32">
-          <p className="text-violet-400 text-sm font-mono mb-6">.design system</p>
+          <p className="text-primary text-sm font-mono mb-6">.design system</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-12">key decisions.</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -145,10 +145,10 @@ export default function Backends() {
               <p className="text-xs uppercase tracking-widest text-white/40 mb-6">color</p>
               <div className="flex gap-2 mb-6">
                 {/* REPLACE with your actual palette */}
-                <div className="flex-1 aspect-square rounded-xl bg-black border border-white/10" />
-                <div className="flex-1 aspect-square rounded-xl bg-neutral-100" />
-                <div className="flex-1 aspect-square rounded-xl bg-red-950" />
-                <div className="flex-1 aspect-square rounded-xl bg-neutral-900" />
+                <div className="flex-1 aspect-square rounded-xl bg-black border border-white/30" />
+                <div className="flex-1 aspect-square rounded-xl bg-neutral-100 border border-white/30" />
+                <div className="flex-1 aspect-square rounded-xl bg-red-600 border border-white/30" />
+                <div className="flex-1 aspect-square rounded-xl bg-neutral-900 border border-white/30" />
               </div>
               <p className="text-white/60 text-sm leading-relaxed">
                 {/* REPLACE: why this palette? */}
@@ -160,7 +160,7 @@ export default function Backends() {
 
         {/* ───────────── RESULT ───────────── */}
         <section className="mb-32">
-          <p className="text-violet-400 text-sm font-mono mb-6">.result</p>
+          <p className="text-primary text-sm font-mono mb-6">.result</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-10 max-w-3xl leading-tight">
             A storefront that finally fit the brand.
           </h2>
@@ -185,7 +185,7 @@ export default function Backends() {
 
         {/* ───────────── REFLECTION ───────────── */}
         <section className="mb-16">
-          <p className="text-violet-400 text-sm font-mono mb-6">.what i'd iterate on</p>
+          <p className="text-primary text-sm font-mono mb-6">.what i'd iterate on</p>
           <p className="text-lg text-white/60 max-w-3xl leading-relaxed">
             {/* REPLACE: 2-3 honest sentences on what you'd improve. */}
             Next iteration, I'd build out a proper drop-launch flow so new releases feel like events rather than catalog updates. I'd also tighten checkout and add stronger product filtering, since both could carry more of the brand voice than they do today.
