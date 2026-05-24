@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 const SEQUENCES = [
-  { full: 'studying at Syracuse U. 📚', highlight: { word: 'Syracuse U.', color: '#E85D04' } },
+  { full: 'graduated from Syracuse U. 🍊', highlight: { word: 'Syracuse U.', color: '#E85D04' } },
   { full: 'working on a project ⌨️', highlight: null },
   { full: 'job hunting 👨🏾‍💻', highlight: null },
 ]
