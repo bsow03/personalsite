@@ -2,6 +2,7 @@ import { FaGithub } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
 import { MdEmail } from "react-icons/md";
 import headshot from '../assets/headshot.JPG'
+import HeroTypeWriter from "./HeroTypeWriter";
 
 export default function Hero() {
   return (
@@ -23,7 +24,7 @@ export default function Hero() {
         <p className="text-white/40 text-xs sm:text-sm font-light mb-8 sm:mb-10 leading-relaxed">
           i build things 👨🏾‍💻.
           <br />
-          currently based in syracuse, ny.
+          <HeroTypeWriter />
         </p>
 
         {/* CTA Buttons */}
@@ -65,7 +66,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="mailto:bsow03@syr.edu"
+            href="mailto:bsow2021@gmail.com"
             className="text-white/30 hover:text-white/70 transition-colors duration-200"
             aria-label="Email"
           >

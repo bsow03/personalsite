@@ -16,7 +16,7 @@ export default function About() {
   const experience = [
     {
       role: 'Info Mgmt & Tech (B.S.)',
-      date: '2021 – Present',
+      date: '2021 – 2026',
       place: 'Syracuse University — iSchool',
       placeClass: 'text-[#E85D04]',
     },
@@ -69,9 +69,9 @@ export default function About() {
           <p className="text-xs sm:text-sm text-white/40 font-light leading-loose mb-4 sm:mb-6">
             My name is{' '}
             <span className="text-white/70">Boubacar Sow</span>, but I go by <span className="text-white/70"> Telly</span>
-            . I'm an undergraduate at{' '}
+            . I'm a recent graduate of{' '}
             <span className="text-[#E85D04]/70">Syracuse University</span>{' '}
-            studying Information Management & Technology at the <span className="text-[#E85D04]/70"> School of Information Studies</span>
+            where I studied Information Management & Technology at the <span className="text-[#E85D04]/70"> School of Information Studies</span>
             . My passion lies in using technical expertise to solve real-world problems —
             from building web apps to creating tools that actually help people.
           </p>
