@@ -3,6 +3,7 @@ import { motion } from "motion/react"
 import { useNavigate } from "react-router-dom"
 import img from '../assets/app.png'
 import backends from '../assets/whitebackends_oglogo.png'
+import jobhunter from '../assets/icon-128.png'
 
 const projects = [
   
@@ -34,16 +35,16 @@ const projects = [
   },
   {
     id: 3,
-    year: '2025',
-    category: 'Coming Soon',
-    title: 'next project',
-    description: 'Something new in the works. Check back soon.',
-    tags: ['Coming Soon'],
+    year: '2026 - ongoing',
+    category: 'Chrome Extension',
+    title: 'job hunter',
+    description: 'A Chrome extension for tracking job applications and streamlining the interview prep process. Built for job seekers who want to stay organized during their search.',
+    tags: ['React', 'Tailwind', 'Vite','CRXJS', 'JavaScript', 'Chrome API'],
     link: '#',
     external: false,
-    bg: 'from-[#0f1a1a] to-[#0d2020]',
-    image: null,
-    imgClass: ''
+    bg: 'from-[oklch(0.2314_0.0078_274.6)] to-[oklch(0.2651_0.0076_274.67)]',
+    image: jobhunter,
+    imgClass: 'w-1/2 h-1/2 object-contain relative z-10'
   },
 ]
 

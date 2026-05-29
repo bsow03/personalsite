@@ -21,9 +21,9 @@ export default function About() {
       placeClass: 'text-[#E85D04]',
     },
     {
-      role: 'yumeworks',
+      role: 'Yume',
       date: '2025 – Present',
-      place: 'Founder & CEO',
+      place: 'Founder',
       placeClass: 'bg-gradient-to-b from-[#cb6ce6] to-[#ff66c4] bg-clip-text text-transparent',
     },
     {
