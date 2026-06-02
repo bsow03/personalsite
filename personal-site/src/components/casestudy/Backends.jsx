@@ -1,7 +1,5 @@
 import { ArrowUpRight, ArrowLeft } from "lucide-react";
 import backendsBefore from '../../assets/backends_before.png';
-import figmaMockup from '../../assets/figma-mockup.gif';
-import backendsAfter from '../../assets/backends_after.gif';
 /**
  * Backends Apparel — Case Study Page
  *
@@ -106,7 +104,7 @@ export default function Backends() {
 
           {/* SWAP FOR: <img src="/case-studies/backends/figma-mockup.png" ... /> */}
           <div className="border border-white/10 rounded-2xl overflow-hidden bg-white/5 aspect-video flex items-center justify-center">
-            <img src={figmaMockup} alt="Backends Figma Mockup" className="w-full rounded-2xl border border-white/10" />
+            <img src="https://i.imgur.com/TWLEZoz.gif" alt="Backends Figma Mockup" className="w-full rounded-2xl border border-white/10" />
           </div>
         </section>
 
@@ -152,7 +150,7 @@ export default function Backends() {
           </h2>
 
           <div className="border border-white/10 rounded-2xl overflow-hidden bg-white/5 aspect-video flex items-center justify-center mb-10">
-            <img src={backendsAfter} alt="Backends Official Store" className="w-full rounded-2xl border border-white/10"/>
+            <img src="https://i.imgur.com/aNgdEZ2.gif" alt="Backends Official Store" className="w-full rounded-2xl border border-white/10"/>
           </div>
 
           <a
