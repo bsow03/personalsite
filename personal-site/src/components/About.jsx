@@ -24,11 +24,11 @@ export default function About() {
       role: 'Yume',
       date: '2025 – Present',
       place: 'Founder',
-      placeClass: 'bg-gradient-to-b from-[#cb6ce6] to-[#ff66c4] bg-clip-text text-transparent',
+      placeClass: 'inline-block bg-gradient-to-b from-[#cb6ce6] to-[#ff66c4] bg-clip-text text-transparent',
     },
     {
       role: 'E-Gaming Specialist',
-      date: '2025 – Present',
+      date: '2025 – 2026',
       place: 'City of Syracuse',
       placeClass: 'text-[#3B82F6]',
     },

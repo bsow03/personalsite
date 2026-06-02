@@ -39,7 +39,8 @@ const projects = [
     category: 'Chrome Extension',
     title: 'job hunter',
     description: 'A Chrome extension for tracking job applications and streamlining the interview prep process. Built for job seekers who want to stay organized during their search.',
-    tags: ['React', 'Tailwind', 'Vite','CRXJS', 'JavaScript', 'Chrome API'],
+    // tags: ['React', 'Tailwind', 'Vite','CRXJS', 'JavaScript', 'Chrome API'],
+    tags: ['Coming Soon'],
     link: '#',
     external: false,
     bg: 'from-[oklch(0.2314_0.0078_274.6)] to-[oklch(0.2651_0.0076_274.67)]',
@@ -89,6 +90,7 @@ export default function Projects() {
             onClick={(e) => {
               if (!project.external && project.link !== '#'){
                 e.preventDefault()
+                window.scrollTo(0, 0)
                 navigate(project.link)
               }
             }}

@@ -1,5 +1,7 @@
 import { ArrowUpRight, ArrowLeft } from "lucide-react";
-
+import backendsBefore from '../../assets/backends_before.png';
+import figmaMockup from '../../assets/figma-mockup.gif';
+import backendsAfter from '../../assets/backends_after.gif';
 /**
  * Backends Apparel — Case Study Page
  *
@@ -70,12 +72,10 @@ export default function Backends() {
         <section className="mb-32">
           <p className="text-primary text-sm font-mono mb-6">.the problem</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-8 max-w-3xl leading-tight">
-            A developer-culture brand without a developer-culture experience.
+            a brand without a storefront.
           </h2>
           <p className="text-lg text-white/60 max-w-3xl leading-relaxed">
-            {/* REPLACE: 2-3 sentences. What state was Backends in when you came on?
-               What was missing? What did the client actually need to ship? */}
-            Backends came in with a clear vision and a community to sell to, but no cohesive identity and no real storefront. The existing site didn't reflect the brand's energy, and there was no infrastructure for actually selling product. The job was to build the visual identity and the experience from the ground up.
+            Backends came in as a first client with a real brand, a community behind it, and a site that technically existed — but couldn't actually sell anything. Shop integration was broken, purchases couldn't go through, and the site itself had no real identity. The job wasn't just a redesign — it was building a functional storefront along with redesign.
           </p>
         </section>
 
@@ -84,19 +84,13 @@ export default function Backends() {
           <p className="text-primary text-sm font-mono mb-6">.before</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-10">where we started.</h2>
 
+          
           <div className="border border-white/10 rounded-2xl overflow-hidden bg-white/5 mb-8 aspect-video flex items-center justify-center">
-            {/* SWAP THIS DIV FOR:
-                <img src="/case-studies/backends/before.png" alt="Original Backends site" className="w-full rounded-2xl border border-white/10" />
-            */}
-            <div className="text-center">
-              <p className="text-white/50 font-mono text-sm">before.png</p>
-              <p className="text-white/30 text-xs mt-2">screenshot of the original site goes here</p>
-            </div>
+            <img src={backendsBefore} alt="Original Backends Site" className="w-full rounded-2xl border border-white/10" />
           </div>
 
-          <p className="text-white/60 max-w-3xl leading-relaxed">
-            {/* REPLACE: 2-3 sentences. Be specific about what wasn't working. */}
-            Functional but flat. Default fonts, no clear hierarchy, no real connection between the brand promise and what visitors saw. There was nothing about it that said "for developers, by developers."
+          <p className="text-white/60 max-w-full leading-relaxed">
+            Backends came in with a working site on the surface — but underneath, customers couldn't complete purchases.  It looked like a placeholder, not a store.
           </p>
         </section>
 
@@ -104,19 +98,15 @@ export default function Backends() {
         <section className="mb-32">
           <p className="text-primary text-sm font-mono mb-6">.process</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-8 max-w-3xl leading-tight">
-            Designed in Figma. Refined in code.
+            designed in figma. refined in code.
           </h2>
           <p className="text-lg text-white/60 max-w-3xl leading-relaxed mb-12">
-            {/* REPLACE: 2-3 sentences on your approach. */}
             Started in Figma with brand exploration: tone, type, color. Then mocked the full site flow before touching code. Once the direction landed, moved to React and refined the details that only show up once it's real.
           </p>
 
           {/* SWAP FOR: <img src="/case-studies/backends/figma-mockup.png" ... /> */}
           <div className="border border-white/10 rounded-2xl overflow-hidden bg-white/5 aspect-video flex items-center justify-center">
-            <div className="text-center">
-              <p className="text-white/50 font-mono text-sm">figma-mockup.png</p>
-              <p className="text-white/30 text-xs mt-2">drop in your Figma mockup</p>
-            </div>
+            <img src={figmaMockup} alt="Backends Figma Mockup" className="w-full rounded-2xl border border-white/10" />
           </div>
         </section>
 
@@ -129,14 +119,12 @@ export default function Backends() {
             {/* Typography card */}
             <div className="border border-white/10 rounded-2xl p-8 bg-white/5">
               <p className="text-xs uppercase tracking-widest text-white/40 mb-6">typography</p>
-              <p className="text-5xl font-extrabold mb-3 tracking-tight">backend$</p>
+              <p className="text-5xl font-comic font-extrabold mb-3 tracking-tight">backend$</p>
               <p className="text-xs text-white/40 mb-6 font-mono">
-                {/* REPLACE: actual font name(s) */}
-                display: [Your Display Font] · body: [Your Body Font]
+                display: [Comic Neue] · body: [Comic Neue]
               </p>
               <p className="text-white/60 text-sm leading-relaxed">
-                {/* REPLACE: why this typeface? */}
-                Heavy display weight with a hand-drawn edge: street feel without losing legibility. Pairs with a clean sans for product copy that keeps the technical, developer-leaning side of the brand on screen.
+                The client had a clear direction for the type from the start. It carries the brand's identity while staying legible across their website.
               </p>
             </div>
 
@@ -144,15 +132,13 @@ export default function Backends() {
             <div className="border border-white/10 rounded-2xl p-8 bg-white/5">
               <p className="text-xs uppercase tracking-widest text-white/40 mb-6">color</p>
               <div className="flex gap-2 mb-6">
-                {/* REPLACE with your actual palette */}
                 <div className="flex-1 aspect-square rounded-xl bg-black border border-white/30" />
                 <div className="flex-1 aspect-square rounded-xl bg-neutral-100 border border-white/30" />
                 <div className="flex-1 aspect-square rounded-xl bg-red-600 border border-white/30" />
                 <div className="flex-1 aspect-square rounded-xl bg-neutral-900 border border-white/30" />
               </div>
               <p className="text-white/60 text-sm leading-relaxed">
-                {/* REPLACE: why this palette? */}
-                Black-dominant with off-white type and a single deep accent. Keeps product photography in focus and gives the brand a confident, almost editorial tone that fits streetwear's monochrome roots.
+                Two modes, same contrast-first approach. Light mode runs white, red, and black — clean and direct. Dark mode shifts to black, zinc, and grey. Both keep the focus on the product without anything competing for attention.
               </p>
             </div>
           </div>
@@ -162,15 +148,11 @@ export default function Backends() {
         <section className="mb-32">
           <p className="text-primary text-sm font-mono mb-6">.result</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-10 max-w-3xl leading-tight">
-            A storefront that finally fit the brand.
+            shipped, functional, and finally on brand.
           </h2>
 
-          {/* SWAP FOR an <img /> or a grid of screenshots of the live site */}
           <div className="border border-white/10 rounded-2xl overflow-hidden bg-white/5 aspect-video flex items-center justify-center mb-10">
-            <div className="text-center">
-              <p className="text-white/50 font-mono text-sm">final-site.png</p>
-              <p className="text-white/30 text-xs mt-2">screenshots of the live site</p>
-            </div>
+            <img src={backendsAfter} alt="Backends Official Store" className="w-full rounded-2xl border border-white/10"/>
           </div>
 
           <a
@@ -187,8 +169,7 @@ export default function Backends() {
         <section className="mb-16">
           <p className="text-primary text-sm font-mono mb-6">.what i'd iterate on</p>
           <p className="text-lg text-white/60 max-w-3xl leading-relaxed">
-            {/* REPLACE: 2-3 honest sentences on what you'd improve. */}
-            Next iteration, I'd build out a proper drop-launch flow so new releases feel like events rather than catalog updates. I'd also tighten checkout and add stronger product filtering, since both could carry more of the brand voice than they do today.
+            Looking back, I'd lean harder into established design principles — more intentional card layouts, better shadow work, and a tighter color system. Less color overall would've made the experience feel more fluid. I'd also organize the design phase more deliberately before touching code; cleaner foundations produce cleaner results. This was one of my earlier projects, and seeing how much my instincts have developed since then makes it clear what I'd do differently if I took another pass at it.
           </p>
         </section>
 

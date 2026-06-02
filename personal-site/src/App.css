@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
+
 
 @theme {
   --bg-dark: #0c0c0e;
@@ -7,4 +9,5 @@
   --bg-card: #141416;
   --color-primary: #8B5CF6;
   --color-primary-dark: #7C3AED;
+  --font-comic: "Comic Neue", sans-serif;
 }
