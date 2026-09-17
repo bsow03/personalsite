@@ -3,7 +3,7 @@ import backendsBefore from '../../assets/backends_before.png';
 /**
  * Backends Apparel — Case Study Page
  *
- * Drop this into src/pages/ (or wherever your routes live).
+ * Drop this into src/components/casestudy/ (or wherever your routes live).
  *
  * To complete:
  *  1. Swap the placeholder image divs for real <img /> tags

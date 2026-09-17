@@ -8,6 +8,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Backends from './components/casestudy/Backends'
+import JobHunter from './components/casestudy/JobHunter'
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/projects/backends" element={<Backends />} />
+      <Route path="/projects/jobhunter" element={<JobHunter />} />
     </Routes>
     <Analytics />
     <SpeedInsights />

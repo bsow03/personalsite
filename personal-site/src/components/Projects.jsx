@@ -6,9 +6,21 @@ import backends from '../assets/whitebackends_oglogo.png'
 import jobhunter from '../assets/icon-128.png'
 
 const projects = [
-  
   {
     id: 1,
+    year: '2026 - ongoing',
+    category: 'Chrome Extension',
+    title: 'job hunter',
+    description: 'A Chrome extension for tracking job applications and streamlining the interview prep process. Built for job seekers who want to stay organized during their search.',
+    tags: ['React', 'Tailwind', 'Vite','CRXJS', 'JavaScript', 'Chrome API', 'Groq API'],
+    link: '/projects/jobhunter',
+    external: false,
+    bg: 'from-[oklch(0.2314_0.0078_274.6)] to-[oklch(0.2651_0.0076_274.67)]',
+    image: jobhunter,
+    imgClass: 'w-1/2 h-1/2 object-contain relative z-10'
+  },
+  {
+    id: 2,
     year: '2025',
     category: 'Branding & E-Commerce',
     title: 'backends apparel',
@@ -21,7 +33,7 @@ const projects = [
     imgClass: 'w-full h-full object-contain p-8'
   },
   {
-    id: 2,
+    id: 3,
     year: '2025 — ongoing',
     category: 'Web Development',
     title: 'yumeworks',
@@ -32,21 +44,7 @@ const projects = [
     bg: 'from-[#1a1a2e] to-[#16213e]',
     image: img,
     imgClass: 'w-1/2 h-1/2 object-cover'
-  },
-  {
-    id: 3,
-    year: '2026 - ongoing',
-    category: 'Chrome Extension',
-    title: 'job hunter',
-    description: 'A Chrome extension for tracking job applications and streamlining the interview prep process. Built for job seekers who want to stay organized during their search.',
-    // tags: ['React', 'Tailwind', 'Vite','CRXJS', 'JavaScript', 'Chrome API'],
-    tags: ['Coming Soon'],
-    link: '#',
-    external: false,
-    bg: 'from-[oklch(0.2314_0.0078_274.6)] to-[oklch(0.2651_0.0076_274.67)]',
-    image: jobhunter,
-    imgClass: 'w-1/2 h-1/2 object-contain relative z-10'
-  },
+  }
 ]
 
 const cardVariants = {
