@@ -92,15 +92,6 @@ export default function JobHunter() {
 
             <div>
               <p className="text-xs uppercase tracking-widest text-white/40 mb-2">
-                role
-              </p>
-              <p className="text-sm">
-                design + development
-              </p>
-            </div>
-
-            <div>
-              <p className="text-xs uppercase tracking-widest text-white/40 mb-2">
                 status
               </p>
               <p className="text-sm">
@@ -129,12 +120,24 @@ export default function JobHunter() {
             <div>
               <p className="text-xs uppercase tracking-widest text-white/40 mb-2">live</p>
               <a
+                href="https://jobhunter.lol"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm inline-flex items-center gap-1 hover:text-primary transition"
+              >
+                landing page <ArrowUpRight size={12} />
+              </a>
+            </div>
+
+            <div>
+              <p className="text-xs uppercase tracking-widest text-white/40 mb-2">live</p>
+              <a
                 href="https://chromewebstore.google.com/detail/job-hunter/jlnhedkbdmnnglfjihhhbahceodgnflp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm inline-flex items-center gap-1 hover:text-primary transition"
               >
-                visit site <ArrowUpRight size={12} />
+                chrome extension <ArrowUpRight size={12} />
               </a>
             </div>
 
